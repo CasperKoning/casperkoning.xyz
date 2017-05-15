@@ -1,14 +1,17 @@
 var express = require('express'),
     app = express();
+var favicon = require('serve-favicon');
 var exphbs  = require('express-handlebars');
 var fs = require('fs');
 var path = require('path');
 
+app.use(favicon(path.join(__dirname,'media','images','favicon.ico')));
+
 app.engine('hbs', exphbs({
   defaultLayout: 'main',
   extname: '.hbs',
-  layoutsDir: __dirname + '/views/layouts/',
-  partialsDir: __dirname + '/views/partials/'
+  layoutsDir: path.join(__dirname, 'views', 'layouts'),
+  partialsDir: path.join(__dirname, 'views', 'partials')
 }));
 app.set('view engine', 'hbs');
 
@@ -19,11 +22,11 @@ function getDirectories (srcpath) {
     .filter(file => fs.lstatSync(path.join(srcpath, file)).isDirectory())
 }
 
-app.use('/slides', express.static(__dirname + '/media/slides'));
+app.use('/slides', express.static(path.join(__dirname, 'media', 'slides')));
 
 app.get('/slides', function(req, res){
   res.render('slides', {
-    slides: getDirectories('media/slides')
+    slides: getDirectories(path.join('media','slides'))
   });
 });
 
