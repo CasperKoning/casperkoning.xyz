@@ -1,0 +1,7 @@
+[submodule "app/media/slides/spark-training"]
+	path = app/media/slides/spark-training
+	url = https://github.com/casperkoning/spark-training
+
+[submodule "app/media/slides/kafka-connect"]
+        path = app/media/slides/kafka-connect
+	url = https://github.com/casperkoning/kafka-connect
