@@ -1,7 +1,8 @@
 {
   "version": "0.0.1",
   "dependencies": {
-    "express": "4.13.3"
+    "express": "^4.7.2",
+    "express-handlebars": "3.0.0"
   },
   "engines": {
     "node": "4.2.x"
