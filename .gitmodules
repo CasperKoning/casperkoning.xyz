@@ -6,4 +6,4 @@
 	url = https://github.com/casperkoning/kafka-connect-presentation
 [submodule "media/slides/devoops-presentation"]
 	path = media/slides/devoops-presentation
-	url = git@github.com:CasperKoning/devoops-presentation.git
+	url = https://github.com/CasperKoning/devoops-presentation
