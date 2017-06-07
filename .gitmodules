@@ -4,3 +4,6 @@
 [submodule "media/slides/kafka-connect-presentation"]
 	path = media/slides/kafka-connect-presentation
 	url = https://github.com/casperkoning/kafka-connect-presentation
+[submodule "media/slides/devoops-presentation"]
+	path = media/slides/devoops-presentation
+	url = git@github.com:CasperKoning/devoops-presentation.git
