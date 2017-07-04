@@ -1,0 +1,42 @@
+[
+  {
+    "id": "als-ik-dronken-ben",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/als-ik-dronken-ben.mp3"
+  },
+  {
+    "id": "asdfnavjdanufa",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/asdfnavjdanufa.mp3"
+  },
+  {
+    "id": "desalniettemin",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/desalniettemin.mp3"
+  },
+  {
+    "id": "dolfijn",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/dolfijn.mp3"
+  },
+  {
+    "id": "goede-verhalen",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/goede-verhalen.mp3"
+  },
+  {
+    "id": "haat-ze",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/haat-ze.mp3"
+  },
+  {
+    "id": "opschieten",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/opschieten.mp3"
+  },
+  {
+    "id": "waarom",
+    "image": "media/images/jager.jpg",
+    "sound": "media/sounds/waarom.mp3"
+  }
+]

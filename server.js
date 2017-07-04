@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var exphbs  = require('express-handlebars');
 var fs = require('fs');
 var path = require('path');
+const soundboardResources = require('./soundboardResources.json');
 
 app.use(favicon(path.join(__dirname,'media','images','favicon.ico')));
 
@@ -27,6 +28,15 @@ app.use('/slides', express.static(path.join(__dirname, 'media', 'slides')));
 app.get('/slides', function(req, res){
   res.render('slides', {
     slides: getDirectories(path.join('media','slides'))
+  });
+});
+
+app.use('/media/sounds', express.static(path.join(__dirname, 'media', 'sounds')));
+app.use('/media/images', express.static(path.join(__dirname, 'media', 'images')));
+
+app.get('/soundboard', function(req, res) {
+  res.render('soundboard', {
+    soundboardResources: soundboardResources
   });
 });
 
