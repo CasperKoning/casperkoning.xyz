@@ -31,6 +31,12 @@ app.get('/slides', function(req, res){
   });
 });
 
+app.get('/xmas-menu', function(req, res) {
+  res.render('menu', {
+    img: 'media/images/xmas-menu.png',
+  })
+});
+
 app.use('/media/sounds', express.static(path.join(__dirname, 'media', 'sounds')));
 app.use('/media/images', express.static(path.join(__dirname, 'media', 'images')));
 
